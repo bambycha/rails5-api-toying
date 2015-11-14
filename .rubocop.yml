@@ -1,0 +1,33 @@
+AllCops:
+  Include:
+  - "**/*.gemspec"
+  - "**/*.podspec"
+  - "**/*.jbuilder"
+  - "**/*.rake"
+  - "**/*.opal"
+  - "**/Gemfile"
+  - "**/Rakefile"
+  - "**/Capfile"
+  - "**/Guardfile"
+  - "**/Podfile"
+  - "**/Thorfile"
+  - "**/Vagrantfile"
+  - "**/Berksfile"
+  - "**/Cheffile"
+  - "**/Vagabondfile"
+  Exclude:
+  - "bin/**/*"
+  - "vendor/**/*"
+  - "db/schema.rb"
+  - ".rspec"
+  - "lib/customer_importer.rb"
+  RunRailsCops: true
+  DisplayCopNames: true
+Metrics/LineLength:
+  Max: 120
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
