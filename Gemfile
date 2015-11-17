@@ -20,6 +20,15 @@ gem 'active_model_serializers', '~> 0.10.0.rc2'
 gem 'pg'
 
 #########################################################
+# Common logic
+#########################################################
+
+gem 'money-rails', github: 'RubyMoney/money-rails'
+gem 'postgres-copy'
+gem 'sed'
+gem 'database_cleaner'
+
+#########################################################
 # Environments
 #########################################################
 
@@ -31,6 +40,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'vcr'
   gem 'webmock', require: 'webmock/rspec'
+  gem 'json_spec'
 end
 
 group :development, :test do
